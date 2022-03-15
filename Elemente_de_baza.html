@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markdown-it-texmath/css/texmath.min.css">
+<link rel="stylesheet" href="file:////home/cristianstratulat/.vscode/extensions/goessner.mdmath-2.7.4/themes/default/style.css">
+
+</head>
+<body class="markdown-body">
+<h1 id="elemente-de-baza-ale-limbajului-c">Elemente de baza ale limbajului C++</h1>
+<h3 id="contents">Contents:</h3>
+<ol>
+<li>Variabile si constante</li>
+<li>Tipuri de date</li>
+<li>Operatori</li>
+</ol>
+<hr>
+<h3 id="1-variabile-si-constante">1. Variabile si constante</h3>
+<ul>
+<li>
+<p><strong>Variabila</strong> = &quot;obiect&quot;/&quot;proprietate&quot; care perimte stocarea unui tip de data in memoria calculatorului
+In cazul in care in program dorim sa folosim date avem nevoie de variabile
+Informal: <strong>variabila = sertar</strong></p>
+</li>
+<li>
+<p>Variabilele pot sa contina date ce se schimba sau date care raman constante (nu se schimba)</p>
+<ul>
+<li>int x = 5 &lt;- constanta</li>
+<li>int x; cin&gt;&gt;x; &lt;- changable</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-tipuri-de-date">2. Tipuri de date</h3>
+<ul>
+<li>Indica ce fel de informatie se stocheaza intr-o variabila</li>
+<li>Informal: Sertare de <em>haine</em>, <em>prosoape</em>, <em>tricouri</em>, etc.
+<strong>(haine, prosoape, tricouri = tiprui de date)</strong></li>
+<li>Tipurile de date pot sa fie de doua feluri:
+<ul>
+<li>simple:
+<ol>
+<li>int/ unsigned int (numere intregi/intregi pozitive)</li>
+<li>long long (numere &gt;10 cifre)</li>
+<li>char (charactere)</li>
+<li>float (numere cu zecimale)</li>
+<li>bool (1/0)</li>
+<li>double (&quot;real&quot;, retine mai multe zecimale ca si float)</li>
+<li>pointer (! &lt;-clasa a X-a)</li>
+</ol>
+</li>
+<li>derivate (! &lt;- clasa a X-a)</li>
+</ul>
+</li>
+<li><em>Observatie</em>: diferenta dintre tipurile de date, pe langa valorile efective pe care le stocheaza este si memoria pe care o ocupa (calculatorul are memorie limitata, de aceea incercam sa folosim doar memoria de care avem nevoie)
+<ul>
+<li>ex: nu vom folosi <strong>float</strong> x pentru a stoca un numar intreg, cu toate ca din punct de vedere matematic este corect.</li>
+</ul>
+</li>
+<li><em>Informal</em>: nu vrem sa avem in camera sertare prea mari pe care niciodata nu le vom umple (ocupa spatiu)</li>
+</ul>
+<h3 id="3-operatori">3. Operatori</h3>
+<h5 id="operator-de-atribuire">Operator de atribuire: =</h5>
+<ul>
+<li>&quot;=&quot; pune in variabila pe care o insoteste o anumita valoare:
+<ul>
+<li>ex: int a; a=3;</li>
+</ul>
+</li>
+</ul>
+<p><strong>!!A nu se confunda cu ==!!</strong></p>
+<h5 id="operatori-aritmetici">Operatori aritmetici: + - * / %</h5>
+<p><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>:</mo><mi>b</mi><mo>=</mo><mi>c</mi><mo separator="true">,</mo><mi>r</mi><mtext> </mtext><mo separator="true">;</mo><mi>a</mi><mo>=</mo><mi>b</mi><mo>∗</mo><mi>c</mi><mo>+</mo><mi>r</mi></mrow><annotation encoding="application/x-tex">a:b=c,r\space; a= b*c +r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">a</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">b</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">c</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mspace"> </span><span class="mpunct">;</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">a</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">b</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathnormal">c</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span></span></span></span></eq></p>
+<ul>
+<li>/ indica catul impartirii (c)</li>
+<li>% indica restul impartii (r)
+! Foarte importante sunt /10 (elimina ultima cifra) si %10 (indica ultima cifra)</li>
+</ul>
+<h5 id="operatori-relationali">Operatori relationali: &lt; &gt; &lt;= &gt;= !=</h5>
+<h5 id="operatori-logici">Operatori logici: ! &amp;&amp; ||</h5>
+<ul>
+<li>! - NOT. Neaga valoarea de adevar a unei propozitii</li>
+<li>|| - OR. Returneaza o valoare adevarata daca una din propozitiile pe care le evalueaza este adevarata</li>
+<li>&amp;&amp; - AND. Returneaza valoarea de adevar daca ambele propozitii sunt adevarate</li>
+</ul>
+<img src=https://ecomputernotes.com/images/Truth-table-for-OR-AND-and-NOT-operations.jpg>
+
+</body>
+</html>
